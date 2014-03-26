@@ -1,0 +1,93 @@
+﻿
+<?xml version="1.0" encoding="utf-8" ?>
+- <rep>
+  <SerialId>FC531BCF4421002UB009</SerialId>
+  <OrderFlag>F</OrderFlag>
+  <OrderFlagName>成功出票</OrderFlagName>
+  <CustomerShouldPay>1920</CustomerShouldPay>
+  <CustomerTicketPrice>1600</CustomerTicketPrice>
+  <DelayPayPrice>0</DelayPayPrice>
+  - <Flights>
+    - <Flight RouteNo="1">
+      <FlightNo>KN2272</FlightNo>
+      <FlyOffDate>2014-03-09 15:20:00</FlyOffDate>
+      <ArrDate>2014-03-09 16:20:00</ArrDate>
+      <StartPortName>伊金霍洛机场</StartPortName>
+      <EndPortName>北京南苑机场</EndPortName>
+      <StartPortFloor />
+      - <Passengers>
+        - <Passenger>
+          <PassengerId>19608472</PassengerId>
+          <PassengerName>王峥</PassengerName>
+          <PassengerTypeName>成人</PassengerTypeName>
+          <CertTypeName>身份证</CertTypeName>
+          <CertNO>110105197912139633</CertNO>
+        </Passenger>
+        - <Passenger>
+          <PassengerId>19608473</PassengerId>
+          <PassengerName>苗京武</PassengerName>
+          <PassengerTypeName>成人</PassengerTypeName>
+          <CertTypeName>身份证</CertTypeName>
+          <CertNO>230103198305233619</CertNO>
+        </Passenger>
+      </Passengers>
+      <AirLineDes>鄂尔多斯-北京</AirLineDes>
+    </Flight>
+  </Flights>
+  <Telepone>18611571211</Telepone>
+  <ErrorCode>0</ErrorCode>
+  <ErrMsg>从数据库取得订单信息！OdResponse实体有值!从DB中找到ODCache:2条</ErrMsg>
+  <CanAppendMail>true</CanAppendMail>
+  - <ChangeDateList>
+    <ChangeOrderId>0</ChangeOrderId>
+    - <PassList>
+      - <ChangePassengerDetail>
+        <PassengerName>王峥</PassengerName>
+        <CertType>身份证</CertType>
+        <CertNo>110105197912139633</CertNo>
+      </ChangePassengerDetail>
+    </PassList>
+    - <OldMsg>
+      <FlightNo>KN2272</FlightNo>
+      <FlyOffDate>2014-03-09 03:20</FlyOffDate>
+      <StartPort>DSN</StartPort>
+      <StartPortName>伊金霍洛机场</StartPortName>
+      <EndPort>NAY</EndPort>
+      <EndPortName>北京南苑机场</EndPortName>
+    </OldMsg>
+    - <NewMsg>
+      <FlightNo>KN2270</FlightNo>
+      <FlyOffDate>2014-03-09 07:20</FlyOffDate>
+      <StartPort>DSN</StartPort>
+      <StartPortName>伊金霍洛机场</StartPortName>
+      <EndPort>NAY</EndPort>
+      <EndPortName>北京南苑机场</EndPortName>
+    </NewMsg>
+  </ChangeDateList>
+  - <ChangeDateList>
+    <ChangeOrderId>0</ChangeOrderId>
+    - <PassList>
+      - <ChangePassengerDetail>
+        <PassengerName>苗京武</PassengerName>
+        <CertType>身份证</CertType>
+        <CertNo>230103198305233619</CertNo>
+      </ChangePassengerDetail>
+    </PassList>
+    - <OldMsg>
+      <FlightNo>KN2272</FlightNo>
+      <FlyOffDate>2014-03-09 03:20</FlyOffDate>
+      <StartPort>DSN</StartPort>
+      <StartPortName>伊金霍洛机场</StartPortName>
+      <EndPort>NAY</EndPort>
+      <EndPortName>北京南苑机场</EndPortName>
+    </OldMsg>
+    - <NewMsg>
+      <FlightNo>KN2270</FlightNo>
+      <FlyOffDate>2014-03-09 07:20</FlyOffDate>
+      <StartPort>DSN</StartPort>
+      <StartPortName>伊金霍洛机场</StartPortName>
+      <EndPort>NAY</EndPort>
+      <EndPortName>北京南苑机场</EndPortName>
+    </NewMsg>
+  </ChangeDateList>
+</rep>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script>
+        if (window.localStorage) {
+            alert("true");
+        } else {
+            alert("false");
+        }
+
+        function AddlocalStorage() {
+            localStorage.setItem("name", "第一次使用");
+        }
+
+        function GetlocalStorage() {
+            alert(localStorage["name"]);
+        }
+
+        function ClearlocalStorage() {
+            localStorage.removeItem("name");
+        }
+
+    </script>
+    <script src="http:///_/js/reloader.js"></script>
+</head>
+<body>
+    <input type="button" value="本地存储" onclick="AddlocalStorage()"/>
+    <input type="button" value="获取存储" onclick="GetlocalStorage()" />
+    <input type="button" value="移除存储" onclick="ClearlocalStorage()" />
+    阿斯顿和放寒假ddd
+</body>
+</html>

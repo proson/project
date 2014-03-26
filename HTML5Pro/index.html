@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+</head>
+    <body>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        <script type="text/javascript">
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = "#0065BD";
+            ctx.fillRect(0, 0, 125, 75);
+
+            ctx.beginPath();
+            ctx.lineWidth = "15";
+            ctx.strokeStyle = "white";
+
+            ctx.moveTo(0, 0);
+            ctx.lineTo(125, 75);
+
+            ctx.moveTo(125, 0);
+            ctx.lineTo(0, 75);
+
+            ctx.stroke();
+
+        </script>
+        <audio controls="controls" autoplay="autoplay" loop="loop">
+            <source src="audio/恭喜发财.mp3" type="audio/mp3" />
+            <source src="audio/恭喜发财.ogg" type="audio/ogg" />
+            Your browser does not support the audio element.
+        </audio>
+        <header>
+            <hgroup>
+                <h1>Header in h1</h1>
+                <h2>Subheader in h2</h2>
+            </hgroup>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Menu Option 1</a></li>
+                <li><a href="#">Menu Option 2</a></li>
+                <li><a href="#">Menu Option 3</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <header>
+                    <h1>Article #1</h1>
+                </header>
+                <section>
+                    This is the first article.  This is <mark>highlighted</mark>.
+                </section>
+            </article>
+            <article>
+                <header>
+                    <h1>Article #2</h1>
+                </header>
+                <section>
+                    This is the second article.  These articles could be blog posts, etc.
+                </section>
+            </article>
+        </section>
+        <aside>
+            <section>
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </section>
+            <figure>
+                <img width="85" height="85"
+                     src="http://www.windowsdevbootcamp.com/Images/JennMar.jpg"
+                     alt="Jennifer Marsman" />
+                <figcaption>Jennifer Marsman</figcaption>
+            </figure>
+        </aside>
+        <footer>Footer - Copyright 2011</footer>
+    </body>
+</html>
