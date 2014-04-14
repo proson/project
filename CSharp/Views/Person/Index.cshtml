@@ -1,0 +1,14 @@
+﻿
+@model CSharp.Models.Person
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.EditorForModel()
+        <input type="submit" value="提交"/>
+    }
+</body>
+

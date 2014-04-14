@@ -11,20 +11,20 @@ namespace CSharpCon
         static void Main(string[] args)
         {
             var ticketlist = Ticket.GetList();
-            var dic = ticketlist.ToLookup(i => i.OrderID, j => j.TicketNo + "\t" + j.Description);
-            foreach (var item in dic)
+            ILookup<int, Ticket> dic = ticketlist.ToLookup(i => i.OrderID);
+            foreach (IGrouping<int, Ticket> item in dic)
             {
                 Console.WriteLine("订单号:" + item.Key);
 
-                foreach (var item1 in item)
+                foreach (Ticket ticket in item)
                 {
-                    //Console.WriteLine("\t\t" + item1.TicketNo + "  " + item1.Description);
+                    Console.WriteLine("\t\t" + ticket.TicketNo + "  " + ticket.Description);
                 }
             }
             Func<string, int> test = TsetMothod;
             CallMethod(TsetMothod, "");
 
-           
+
 
         }
 
