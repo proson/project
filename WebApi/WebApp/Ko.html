@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <div>
+        <div><label>省：</label><input data-bind="value:province" /></div>
+        <div><label>市：</label><input data-bind="value:city" /></div>
+        <div><label>区:</label><input data-bind="value: district" /></div>
+        <div><label>街道:</label><input data-bind="value: street" /></div>
+        <div><label>地址:</label><span data-bind="text: address"></span></div>
+        <div><input type="button" data-bind="click: format" value="确定" /></div>
+    </div>
+    
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/knockout-3.0.0.js"></script>
+    <script type="text/javascript">
+        function AddressModel() {
+            var self = this;
+            self.province = ko.observable("江苏省");
+            self.city = ko.observable("苏州市");
+            self.district = ko.observable("工业园区");
+            self.street = ko.observable("星湖街328号");
+            self.address = ko.observable();
+
+            self.format = function () {
+                if (self.province() && self.city() && self.district() && self.street()) {
+                    var address = self.province() + " " + self.city() + " " + self.district() + " " + self.street();
+                    self.address(address);
+                } else {
+                    alert("请提供完整的地址信息");
+                }
+            };
+            self.format();
+
+        }
+
+        ko.applyBindings(new AddressModel());
+    </script>
+</body>
+</html>
